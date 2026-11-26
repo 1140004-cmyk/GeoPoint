@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GeoPoints - Detalhes</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/api.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+    <script src="../js/detalhe.js" defer></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">G</span>
+        <span>Geo<span class="brand-light">Point</span></span>
+    </a>
+
+    <nav>
+        <a class="nav-link active" href="index.html">Pontos</a>
+        <a class="nav-link" href="formulario.html">Cadastrar ponto</a>
+    </nav>
+</header>
+
+    <main class="container narrow">
+
+        <a href="index.html" class="back-link">
+            ← Voltar para pontos
+        </a>
+
+        <section class="page-header">
+
+            <section>
+                <p class="eyebrow">INFORMAÇÕES DO LOCAL</p>
+
+                <h2>Detalhes do ponto</h2>
+
+                <p>Confira os dados deste registro.</p>
+            </section>
+
+        </section>
+
+        <section class="card">
+
+            <p id="mensagem" class="message hidden"></p>
+
+            <section id="detalhes" class="detail-content hidden">
+
+                <section class="detail-title">
+
+                    <h2 id="detalhe-nome"></h2>
+
+                    <p id="detalhe-descricao"></p>
+
+                </section>
+
+                <section class="detail-grid">
+
+                    <section class="detail-item">
+                        <span>LATITUDE</span>
+                        <strong id="detalhe-latitude"></strong>
+                    </section>
+
+                    <section class="detail-item">
+                        <span>LONGITUDE</span>
+                        <strong id="detalhe-longitude"></strong>
+                    </section>
+
+                    <section class="detail-item full">
+                        <span>IDENTIFICADOR (ID)</span>
+                        <strong id="detalhe-id"></strong>
+                    </section>
+
+                </section>
+
+                <section class="form-actions">
+
+                    <button
+                        type="button"
+                        class="button danger-outline"
+                        id="excluir">
+                        Excluir ponto
+                    </button>
+
+                    <a
+                        href="#"
+                        class="button primary"
+                        id="editar">
+                        Editar ponto
+                    </a>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

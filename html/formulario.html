@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GeoPoint | Formulário</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/api.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+    <script src="../js/formulario.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">G</span>
+            <span>Geo<span class="brand-light">Point</span></span>
+        </a>
+
+        <nav>
+            <a class="nav-link" href="index.html">Pontos</a>
+            <a class="nav-link active" href="formulario.html">
+                Cadastrar ponto
+            </a>
+        </nav>
+
+    </header>
+
+    <main class="container narrow">
+
+        <a class="back-link" href="index.html">
+            ← Voltar para pontos
+        </a>
+
+        <section class="page-heading compact">
+
+            <div>
+                <p class="eyebrow">GERENCIAMENTO GEOGRÁFICO</p>
+
+                <h1 id="titulo-formulario">
+                    Cadastrar novo ponto
+                </h1>
+
+                <p class="subtitle">
+                    Preencha as informações do local geográfico.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div id="mensagem" class="message hidden"></div>
+
+            <form id="form-ponto" novalidate>
+
+                <div class="field">
+
+                    <label for="name">Nome *</label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        maxlength="100"
+                        placeholder="Ex.: Praça Central"
+                        required
+                    >
+
+                </div>
+
+                <div class="field">
+
+                    <label for="description">Descrição</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        maxlength="255"
+                        rows="4"
+                        placeholder="Descrição do local..."
+                    ></textarea>
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label for="latitude">Latitude *</label>
+
+                        <input
+                            id="latitude"
+                            name="latitude"
+                            type="number"
+                            min="-90"
+                            max="90"
+                            step="any"
+                            placeholder="Ex.: -28.2825"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="longitude">Longitude *</label>
+
+                        <input
+                            id="longitude"
+                            name="longitude"
+                            type="number"
+                            min="-180"
+                            max="180"
+                            step="any"
+                            placeholder="Ex.: -52.7869"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <a class="button secondary" href="index.html">
+                        Cancelar
+                    </a>
+
+                    <button
+                        class="button primary"
+                        id="botao-salvar"
+                        type="submit"
+                    >
+                        Salvar ponto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <footer>
+            GeoPoint · Trabalho G2 — Desenvolvimento Frontend
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
