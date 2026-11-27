@@ -1,23 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>GeoPoint | Pontos geográficos</title>
+
+    <!-- Conecta o arquivo CSS responsável pela aparência. -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Importa os arquivos JavaScript. -->
     <script src="../js/api.js" defer></script>
     <script src="../js/ui.js" defer></script>
     <script src="../js/lista.js" defer></script>
 </head>
+
 <body>
 
+<!-- Cabeçalho  -->
 <header class="topbar">
     <a class="brand" href="index.html">
         <span class="brand-mark">G</span>
         <span>Geo<span class="brand-light">Point</span></span>
     </a>
 
+    <!-- Links para navegar  -->
     <nav>
         <a class="nav-link active" href="index.html">Pontos</a>
         <a class="nav-link" href="formulario.html">Cadastrar ponto</a>
@@ -26,6 +36,7 @@
 
 <main class="container">
 
+    <!-- Botão para cadastrar um novo ponto -->
     <section class="page-heading">
         <div>
             <p class="eyebrow">GERENCIAMENTO GEOGRÁFICO</p>
@@ -35,13 +46,16 @@
             </p>
         </div>
 
+        <!-- Formulário de cadastro -->
         <a class="button primary" href="formulario.html">
             ＋ Novo ponto
         </a>
     </section>
 
+    <!-- Informações da lista de pontos -->
     <section class="panel">
 
+        <!-- Contador de registros cadastrados -->
         <div class="panel-heading">
             <div>
                 <h2>Lista de pontos</h2>
@@ -50,9 +64,11 @@
                 </p>
             </div>
 
+            <!-- Atualiza a quantidade de pontos -->
             <span class="counter" id="total-pontos">0 pontos</span>
         </div>
 
+        <!-- Pesquisar pontos pelo nome ou descrição -->
         <div class="filter-wrap">
             <input
                 id="filtro"
@@ -61,8 +77,10 @@
             >
         </div>
 
+        <!-- Mensagens de sucesso, erro ou carregamento -->
         <div id="mensagem" class="message hidden"></div>
 
+        <!-- Pontos cadastrados -->
         <div class="table-scroll">
             <table>
                 <thead>
@@ -75,14 +93,17 @@
                     </tr>
                 </thead>
 
+                <!-- Registros da API -->
                 <tbody id="tabela-pontos"></tbody>
             </table>
         </div>
 
+        <!-- Resultados da pesquisa -->
         <p class="table-foot" id="resultado-filtro"></p>
 
     </section>
 
+    <!-- Identificação  -->
     <footer>
         GeoPoint · Trabalho G2 — Desenvolvimento Frontend
     </footer>
