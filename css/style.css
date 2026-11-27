@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* Aparência geral da página */
 body {
     margin: 0;
     background: var(--bg);
@@ -22,6 +23,7 @@ body {
     font-size: 15px;
 }
 
+/* Cabeçalho */
 .topbar {
     height: 76px;
     background: white;
@@ -32,6 +34,7 @@ body {
     padding: 0 6%;
 }
 
+/* Nome e símbolo da marca */
 .brand {
     display: flex;
     align-items: center;
@@ -42,6 +45,7 @@ body {
     text-decoration: none;
 }
 
+/* Letra G da logo */
 .brand-mark {
     width: 34px;
     height: 34px;
@@ -52,17 +56,20 @@ body {
     border-radius: 11px;
 }
 
+/* Personaliza a parte Point  */
 .brand-light {
     font-weight: 500;
     color: #7890ad;
 }
 
+/* Organiza os links do menu */
 .topbar nav {
     display: flex;
     gap: 28px;
     height: 100%;
 }
 
+/* Aparência dos links de navegação */
 .nav-link {
     display: flex;
     align-items: center;
@@ -71,21 +78,25 @@ body {
     font-weight: 600;
 }
 
+/* Muda a cor do link quando o mouse passa ou selecionado  */
 .nav-link:hover,
 .nav-link.active {
     color: var(--blue);
 }
 
+/* Define a largura e o espaçamentO */
 .container {
     max-width: 1180px;
     margin: 0 auto;
     padding: 54px 24px 20px;
 }
 
+/* Limita a largura de páginas menores */
 .narrow {
     max-width: 850px;
 }
 
+/* Título e o botão principal da página */
 .page-heading {
     display: flex;
     align-items: center;
@@ -94,6 +105,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* Sobretítulo título */
 .eyebrow {
     font-size: 11px;
     font-weight: 800;
@@ -101,16 +113,19 @@ body {
     color: var(--blue);
 }
 
+/* Tamanho e o espaçamento dos títulos principais */
 h1 {
     font-size: 32px;
     margin: 0 0 8px;
 }
 
+/* Cor textos secundários */
 .subtitle,
 .muted {
     color: var(--muted);
 }
 
+/* Painel branco que envolve os conteúdos */
 .panel {
     background: rgb(255, 255, 255);
     border: 1px solid var(--line);
@@ -119,27 +134,30 @@ h1 {
     box-shadow: var(--shadow);
 }
 
+/* Organiza o título da lista e o contador */
 .panel-heading {
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
 }
 
+/* Personalisa o contador de pontos cadastrados */
 .counter {
     background: #edf3ff;
     color: var(--blue);
     padding: 4px 8px;
     border-radius: 10px;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Espaço abaixo do campo de pesquisa */
 .filter-wrap {
     margin-bottom: 20px;
 }
 
+/* Estiliza a entrada de dados */
 input,
 textarea {
     width: 100%;
@@ -150,6 +168,7 @@ textarea {
     outline: none;
 }
 
+/* Destaca o campo quando clica do nele */
 input:focus,
 textarea:focus {
     border-color: #7da5fa;
@@ -160,6 +179,7 @@ textarea {
     resize: vertical;
 }
 
+/* Estrutura e o alinhamento da tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -167,6 +187,7 @@ table {
     min-width: 690px;
 }
 
+/* Títulos das colunas */
 th {
     font-size: 11px;
     color: #8996a9;
@@ -174,27 +195,32 @@ th {
     padding: 13px 12px;
 }
 
+/* Personalisa as informações com os dados da tabela */
 td {
     padding: 16px 12px;
     border-bottom: 1px solid #edf1f6;
     color: #596b83;
 }
 
+/* Rolagem horizontal na tabela se necessário */
 .table-scroll {
     overflow-x: auto;
 }
 
+/* Personaliza o nome dos pontos cadastrados */
 .point-name {
     color: var(--ink);
     font-weight: 700;
     text-decoration: none;
 }
 
+/* Organiza os botões de ações da tabela */
 .actions {
     display: flex;
     gap: 7px;
 }
 
+/* Links e botões de ação */
 .action-link,
 .action-button {
     border: 0;
@@ -207,10 +233,12 @@ td {
     font-size: 12px;
 }
 
+/* Cor da ação de exclusão */
 .delete {
     color: var(--red);
 }
 
+/* Aparência geral dos botões */
 .button {
     display: inline-flex;
     align-items: center;
@@ -224,32 +252,38 @@ td {
     cursor: pointer;
 }
 
+/* Bbotão principal */
 .primary {
     background: var(--blue);
     color: white;
 }
 
+/* Escurece o botão principal ao passar o mouse */
 .primary:hover {
     background: var(--blue-dark);
 }
 
+/* Bbotões secundários */
 .secondary {
     background: white;
     border-color: var(--line);
     color: #64748b;
 }
 
+/* Botões de ações perigosas */
 .danger-outline {
     background: white;
     border-color: #f2caca;
     color: var(--red);
 }
 
+/* Link para voltar à página anterior */
 .back-link {
     color: #6e8098;
     text-decoration: none;
 }
 
+/* Campos dos formulários */
 .field {
     display: flex;
     flex-direction: column;
@@ -257,17 +291,20 @@ td {
     margin-bottom: 21px;
 }
 
+/* Nomes dos campos */
 .field label {
     font-weight: 700;
     font-size: 13px;
 }
 
+/* Campos do formulário em duas colunas */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* Botões do formulário */
 .form-actions {
     display: flex;
     justify-content: flex-end;
@@ -277,31 +314,37 @@ td {
     border-top: 1px solid var(--line);
 }
 
+/* Aparência geral das mensagens */
 .message {
     padding: 12px 15px;
     border-radius: 9px;
     margin-bottom: 18px;
 }
 
+/* Mensagens de erro */
 .message.error {
     background: #fff0f0;
     color: #b83232;
 }
 
+/* Mensagens informativas */
 .message.info {
     background: #edf4ff;
     color: #2857a5;
 }
 
+/* Mensagens de sucesso */
 .message.success {
     background: #eafaf3;
     color: #14734f;
 }
 
+/* Esconde elementos que não devem aparecer */
 .hidden {
     display: none !important;
 }
 
+/* Iinformações da página de detalhes */
 .detail-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -309,22 +352,26 @@ td {
     padding: 25px 0;
 }
 
+/* Iinformação individualmente */
 .detail-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* Nomes das informações */
 .detail-item span {
     font-size: 10px;
     font-weight: 800;
     color: #8b99aa;
 }
 
+/* O item ocupa toda a largura da tela  */
 .detail-item.full {
     grid-column: 1 / -1;
 }
 
+/* Rodapé do site */
 footer {
     text-align: center;
     color: #9aa6b6;
@@ -332,7 +379,9 @@ footer {
     padding: 35px 0 10px;
 }
 
+/* Adapta o site para telas menores */
 @media(max-width: 700px) {
+
     .topbar {
         height: auto;
         padding: 15px;
@@ -366,63 +415,65 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* Ajustes dos títulos */
 
+/* Aparência dos títulos secundários */
 h2 {
     margin-top: 0;
     color: var(--ink);
 }
 
-/* Espaçamento da página de formulário e detalhes */
-
+/* Espaçamento das páginas de formulário e detalhes */
 .compact {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-/* Mensagens e conteúdos das telas */
-
+/* Espaçamento entre as linhas das mensagens */
 .message {
     line-height: 1.5;
 }
 
-/* Rodapé da tabela */
-
+/* Texto abaixo da tabela */
 .table-foot {
     color: var(--muted);
     font-size: 12px;
     margin-top: 18px;
 }
 
-/* Tela de detalhes */
-
+/* Espaçamento interno do painel de detalhes */
 .detail-panel {
     padding: 30px;
 }
 
+/* Organização do conteúdo de detalhes */
 .detail-content {
     display: block;
 }
 
+/* Título das informações da página de detalhes */
 .detail-title {
     padding-bottom: 22px;
     border-bottom: 1px solid var(--line);
 }
 
+/* Tamanho e o espaçamento do título de detalhes */
 .detail-title h2 {
     font-size: 24px;
     margin-bottom: 8px;
 }
 
+/* Personaliza a descrição da página de detalhes */
 .detail-title p {
     color: var(--muted);
     line-height: 1.6;
 }
 
+/* Adiciona espaço acima das informações detalhadas */
 .detail-grid {
     margin-top: 10px;
 }
 
+/* Cria cartões individuais para cada informação */
 .detail-item {
     background: #f8faff;
     border: 1px solid var(--line);
@@ -431,38 +482,38 @@ h2 {
     min-width: 0;
 }
 
+/* Estiliza os valores apresentados nos detalhes */
 .detail-item strong {
     color: var(--ink);
     font-size: 15px;
     overflow-wrap: anywhere;
 }
 
-/* Botões */
-
+/* Transições suaves aos botões e links */
 .button,
 .action-link,
 .action-button {
     transition: 0.2s ease;
 }
 
+/* Pequeno movimento ao passar o mouse nos botões */
 .button:hover {
     transform: translateY(-1px);
 }
 
+/* Sublinhado ao passar o mouse nas ações */
 .action-link:hover,
 .action-button:hover {
     text-decoration: underline;
 }
 
-/* Botão desabilitado */
-
+/* Indica visualmente, botão está desabilitado */
 button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-/* Responsividade */
-
+/* Ajustes dispositivos móveis */
 @media (max-width: 700px) {
 
     .detail-panel {
